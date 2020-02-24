@@ -7,4 +7,4 @@ myBucket=terraform-springboot-helloapp-ravishah
 aws s3 ls s3://$myBucket |awk '{print $4}'
 myApp=`aws s3 ls s3://$myBucket |awk '{print $4}'`
 aws s3 cp s3://$myBucket/$myApp /opt
-java -jar /opt/$myA
+java -jar /opt/$myA &
